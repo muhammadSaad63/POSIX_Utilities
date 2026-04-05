@@ -8,7 +8,7 @@ int main(int argc, char* argv[]){
         cout << std::filesystem::current_path().string();
     }
     else{
-        cout << "[!] Expected 0 arguments, got " << (argc - 1) << " :(";
+        cout << "[!] Expected 0 arguments, got " << (argc - 1) << ". :(";
     }
     
     cout << '\n';

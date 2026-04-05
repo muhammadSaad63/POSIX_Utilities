@@ -3,12 +3,14 @@
 using std::cout;
 
 
+// will needa use filing in this
+
 int main(int argc, char* argv[]){
     if (argc == 1){
-        cout << std::filesystem::current_path().string();
+        cout << "[!] Expected 1+ arguments, got 0. :(";
     }
     else{
-        cout << "[!] Expected 0 arguments, got " << (argc - 1) << " :(";
+        cout << std::filesystem::;
     }
     
     cout << '\n';
