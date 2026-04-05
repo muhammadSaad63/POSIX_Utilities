@@ -13,12 +13,12 @@ int main(int argc, char* argv[]){
         std::filesystem::path path = argv[1];
 
         if (!std::filesystem::exists(path)){
-            cout << "[!] wc: failed to wordcount '" << path.string() << "': file doesn't exist.\n";
+            cout << "[!] head: failed to access '" << path.string() << "': file doesn't exist.\n";
             return 0;
         }
         
         if (!std::filesystem::is_regular_file(path)){
-            cout << "[!] wc: failed to wordcount '" << path.string() << "': Arg is not a file.\n";
+            cout << "[!] head: failed to access '" << path.string() << "': Arg is not a file.\n";
             return 0;
         }
 
