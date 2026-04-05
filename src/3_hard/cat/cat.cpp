@@ -22,28 +22,13 @@ int main(int argc, char* argv[]){
             return 0;
         }
 
-        int lineCount {0};
-        int wordCount {0};
-        int charCount {0};
-        
         std::ifstream file(path);
         if (file.is_open()){
             std::string line;
 
             while (std::getline(file, line)){
-                lineCount++;
-
-                for (auto& character : line){
-                    if (isalpha(character)){
-                        charCount++;
-                    }
-                    if (character == ' ' || character == '\t' || character == '\n'){
-                        wordCount++;
-                    }
-                }
+                cout << line << '\n';
             }
-
-            cout << lineCount << " " << wordCount << " " << charCount << " (" << path.string() << ")\n"; 
         }
     }
 }
