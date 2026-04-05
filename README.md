@@ -5,7 +5,6 @@ A systems-level implementation of the **IEEE 1003.1** standard suite for core **
 
 ---
 
-<br>
 
 <!-- 
 ## About ℹ️
@@ -13,8 +12,7 @@ lorem ipsum
 
 <br> -->
 
-## Utilities Implemented
-### POSIX Systems Utilities Implementation (IEEE 1003.1)
+## Utilities Implemented 🔨
 
 | S. No | Command | Description | Status |
 | :--- | :--- | :--- | :---: |
@@ -32,7 +30,7 @@ lorem ipsum
 | 12 | `rmdir` | Removes empty directories | ✅ |
 | 13 | `cat` | Concatenates and displays file content | ✅ |
 | 14 | `head` | Outputs the first part of files | ✅ |
-| 15 | `tail` | Outputs the last part of files | [ ] |
+| 15 | `tail` | Outputs the last part of files | ✅ |
 | 16 | `touch` | Changes file timestamps or creates files | ✅ |
 | 17 | `wc` | Prints newline, word, and byte counts | [ ] |
 | 18 | `grep` | Searches files for matching patterns | [ ] |
