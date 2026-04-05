@@ -13,12 +13,15 @@ int main(int argc, char* argv[]){
         for (auto arg {1}; arg < argc; ++arg){
             path = argv[arg];
 
-            if (!exists(path)){
+            if (!std::filesystem::exists(path)){
                 std::filesystem::path currDir;
 
-                for (auto& dir : path){                                 // iterates through each dir/node in path
+                for (auto& dir : path){                                     // iterates through each dir/node in path
                     currDir /= dir;
-                    std::filesystem::create_directory(currDir);         // :D made on me own alhadmulillah
+
+                    if (!std::filesystem::exists(currDir)){
+                        std::filesystem::create_directory(currDir);         // :D made on me own alhadmulillah
+                    }
                 }
             }
         }
