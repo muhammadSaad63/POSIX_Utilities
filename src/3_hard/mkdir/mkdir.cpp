@@ -3,8 +3,6 @@
 using std::cout;
 
 
-// will needa use filing in this
-
 int main(int argc, char* argv[]){
     if (argc == 1){
         cout << "[!] Expected atleast 1 argument, got 0. :(\n";
