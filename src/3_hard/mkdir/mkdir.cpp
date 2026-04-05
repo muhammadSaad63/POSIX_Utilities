@@ -19,8 +19,9 @@ int main(int argc, char* argv[]){
                 for (auto& dir : path){                                     // iterates through each dir/node in path
                     currDir /= dir;
 
-                    if (!std::filesystem::exists(currDir))
+                    if (!std::filesystem::exists(currDir)){
                         std::filesystem::create_directory(currDir);         // :D made on me own alhadmulillah
+                    }
                 }
             }
         }
